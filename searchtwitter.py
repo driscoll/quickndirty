@@ -1,21 +1,22 @@
 #!/usr/bin/python
 """
-Quick N Dirty Twitter Search
+Quick and dirty Twitter search tool
 
 Typical use:
 
-$ python quickndirty.py "#occupykingslanding" "#ows" >> occupyla.csv
+$ python searchtwitter.py "#occupykingslanding" "#ows" >> occupyla.csv
 
 Sample output:
 
 "123857240330481664","RT @RolandSlinger: I'm tired of King Joffrey and his Lannister 1%! #OccupyKingsLanding","1318364841","rwggomes","155117397","None","&lt;a href=&quot;https://chrome.google.com/extensions/detail/encaiiljifbdbjlphpgpiimidegddhic&quot; rel=&quot;nofollow&quot;&gt;Silver Bird&lt;/a&gt;","None","en","http://a0.twimg.com/profile_images/1458581430/novo_penteado_normal.jpg"
 
 Copyright 2011 Kevin Driscoll <driscollkevin@gmail.com>
-This version of Quick N Dirty Twitter Search was released under an MIT License.
+This version was released under an MIT License.
 
 TODO
 * verbose option to output some info to console 
 * commandline options for since, until
+* need to beef up the piping
 
 """
 
@@ -181,8 +182,8 @@ if __name__=='__main__':
     # First deal with options 
     p = optparse.OptionParser(
             description=' Search Twitter and return results as CSV on stdout',
-            prog='quickndirty',
-            version='quickndirty 0.1',
+            prog='searchtwitter',
+            version='searchtwitter 0.1',
             usage=' python %prog.py "KEYWORD"...')
     # TODO Verbose option temporarily removed because typical
     # use is to pipe all output into a file

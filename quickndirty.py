@@ -4,7 +4,7 @@ Quick and dirty Twitter search tool
 
 Typical use:
 
-$ python searchtwitter.py "#occupykingslanding" "#ows" >> occupyla.csv
+$ python quickndirty.py "#occupykingslanding" "#ows" >> occupyla.csv
 
 Sample output:
 
@@ -182,8 +182,8 @@ if __name__=='__main__':
     # First deal with options 
     p = optparse.OptionParser(
             description=' Search Twitter and return results as CSV on stdout',
-            prog='searchtwitter',
-            version='searchtwitter 0.1',
+            prog='quickndirty',
+            version='quickndirty 0.1',
             usage=' python %prog.py "KEYWORD"...')
     # TODO Verbose option temporarily removed because typical
     # use is to pipe all output into a file
